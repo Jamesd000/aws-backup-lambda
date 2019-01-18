@@ -112,7 +112,7 @@ Resources:
         DailyBackupEvent:
           Type: Schedule
           Properties:
-            Schedule: rate(1 day)
+            Schedule: rate(1 hour)
             Input:
               Fn::Join:
               - ''
