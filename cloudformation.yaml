@@ -116,7 +116,7 @@ Resources:
             Input:
               Fn::Join:
               - ''
-              - - '{"period_label": "hour", "period_format": "%H", "keep_count": 4,'
+              - - '{"period_label": "hour", "period_format": "%H", "keep_count": 2,'
                 - '"arn": "'
                 - !If [EnableSuccessSNSTopic, !If [ CreateSuccessSNSTopic, Ref: SuccessSNSTopic, Ref: SuccessSNSTopicOption], '']
                 - '", '
